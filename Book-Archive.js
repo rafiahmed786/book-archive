@@ -25,17 +25,17 @@ const displayItems = (books) => {
     if(books.length === 0){
         // when user will enter an invalid text 
         const error = document.getElementById('error').style.display="Block";
-         const displayNone=document.getElementById('meal-container').style.display="none";
+         const displayNone=document.getElementById('books-container').style.display="none";
 
     }
     else{
         // display none of error 
         const error1 = document.getElementById('error').style.display="none";
         // display flex of books 
-        document.getElementById('meal-container').style.display="flex"
+        document.getElementById('books-container').style.display="flex"
 
         // display all the books 
-        const mealContainer = document.getElementById('meal-container');
+        const mealContainer = document.getElementById('books-container');
         mealContainer.textContent= "";
 
         // using for each loop to show the first 20 books 
